@@ -1,0 +1,10 @@
+node_modules/
+docs/raw-*.json
+docs/findings.md
+EXECUTION-PLAN.md
+*.log
+*.tgz
+.env
+.env.*
+.npmrc
+.DS_Store

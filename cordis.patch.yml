@@ -1,0 +1,18 @@
+# 1) Insert this bundle's provider row. `name` must equal package.json#name
+#    verbatim: the Loader resolves modules by that specifier.
+- insert:
+    - id: web-search-zai
+      name: '@hexiaowu/dsh-web-search-zai'
+      config:
+        apiKeyEnv: ZAI_CODING_CN_API_KEY
+        mode: auto
+        region: cn
+
+# 2) Point the web seam's search channel at this provider.
+#    A patch replaces the row's whole `config` (never deep-merges), so
+#    `fetchProvider` must be restated or web_fetch loses its provider too.
+- id: web
+  name: '@deepseek-ai/dsh-web'
+  config:
+    searchProvider: zai
+    fetchProvider: http
