@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.1 — 2026-11-15
+
+- First release published through GitHub Actions with npm Trusted Publishing (OIDC) and provenance.
+- No functional changes since 0.1.0.
+
 ## 0.1.0 — 2026-11-15
 
 - Initial release of `@hexiaowu/dsh-web-search-zai`: a Z.ai / Zhipu GLM search provider for the

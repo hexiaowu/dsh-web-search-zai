@@ -1,6 +1,6 @@
 {
   "name": "@hexiaowu/dsh-web-search-zai",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Z.ai / Zhipu GLM web-search provider for the DeepSeek Harness ctx.web seam",
   "license": "MIT",
   "author": "hexiaowu",
