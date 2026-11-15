@@ -34,7 +34,10 @@
     "cordis.patch.yml",
     "README.md",
     "LICENSE",
-    "CHANGELOG.md"
+    "CHANGELOG.md",
+    "README.en.md",
+    "CONTRIBUTING.md",
+    "RELEASING.md"
   ],
   "engines": {
     "node": "^22.19.0 || >=24.0.0",

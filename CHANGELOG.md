@@ -2,8 +2,11 @@
 
 ## 0.1.1 — 2026-11-15
 
-- First release published through GitHub Actions with npm Trusted Publishing (OIDC) and provenance.
-- No functional changes since 0.1.0.
+- Rewrote the README for end users; split developer/release notes into `CONTRIBUTING.md` and
+  `RELEASING.md`; added `README.en.md`.
+- Prepared the first release for GitHub Actions Trusted Publishing (OIDC) + provenance; `0.1.0` was
+  published manually.
+- No runtime behavior changes since 0.1.0.
 
 ## 0.1.0 — 2026-11-15
 
