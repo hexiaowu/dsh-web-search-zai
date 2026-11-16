@@ -12,22 +12,24 @@ instead of DeepSeek's official search channel.
 
 - `plan` / `api` channels; `auto` tries `plan` first, then the native API.
 - Optional DeepSeek fallback when Z.ai fails.
-- Settings → **Z.ai 搜索** lets you set the API key, toggle the fallback, and run a test search.
+- Settings → **Z.ai search** lets you set the API key, toggle the fallback, and run a test search.
 - No extra runtime dependencies and no build step.
 
 ## Install
 
-Add `@hexiaowu/dsh-web-search-zai` in **Plugins → Add plugin**, or:
+Requires DSH `>=0.2.2-rc.1 <0.3.0` (see `engines.dsh` in `package.json`). The package is published on npm and installed by name from npm.
 
-```text
-plugin_manager install_bundle -> @hexiaowu/dsh-web-search-zai
+Use the `dsh` launcher bundled with Desktop to add the package to a profile (use the full path if `dsh` is not on your PATH):
+
+```bash
+dsh plugin --profile desktop add @hexiaowu/dsh-web-search-zai
 ```
 
-Restart Harness once. The plugin enables itself automatically; web fetching is unaffected.
+Restart Harness once; the plugin enables itself automatically, and web fetching is unaffected.
 
 ## Configure
 
-Open **Settings → Z.ai 搜索** and enter the API key. It is stored in the DSH credential store, not in
+Open **Settings → Z.ai search** and enter the API key. It is stored in the DSH credential store, not in
 the profile configuration. You can also store it in `~/.dsh/.credentials.yaml`
 (`refs.ZAI_CODING_CN_API_KEY`) or set it in Harness's launch environment; a literal `apiKey` takes
 precedence.
@@ -78,7 +80,7 @@ The remaining fields (`planBaseURL`, `apiBaseURL`, `apiVersion`, `maxTokens`, `m
 
 | Symptom | Fix |
 |---|---|
-| No **Z.ai 搜索** in Settings | Restart Harness once, or refresh the page |
+| No **Z.ai search** in Settings | Restart Harness once, or refresh the page |
 | `web_search` disappears | No Z.ai API key and no usable DeepSeek fallback |
 | HTTP 401 / 403 | The API key and `region` don't match, or the key lacks the required permission |
 | HTTP 429 / error `1113` | No balance, or the `api` channel has no search resource package |
@@ -87,8 +89,11 @@ The remaining fields (`planBaseURL`, `apiBaseURL`, `apiVersion`, `maxTokens`, `m
 
 ## Uninstall
 
-Remove **Z.ai 网页搜索** in **Plugins → Installed**, then restart Harness. Search returns to the
-DeepSeek official channel.
+```bash
+dsh plugin --profile desktop remove @hexiaowu/dsh-web-search-zai
+```
+
+Restart Harness; search returns to the DeepSeek official channel.
 
 ## License
 

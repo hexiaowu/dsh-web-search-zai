@@ -1,4 +1,4 @@
-# @hexiaowu/dsh-web-search-zai
+# dsh-web-search-zai
 
 [![npm](https://img.shields.io/npm/v/@hexiaowu/dsh-web-search-zai?label=npm)](https://www.npmjs.com/package/@hexiaowu/dsh-web-search-zai)
 [![CI](https://github.com/hexiaowu/dsh-web-search-zai/actions/workflows/ci.yml/badge.svg)](https://github.com/hexiaowu/dsh-web-search-zai/actions/workflows/ci.yml)
@@ -17,13 +17,15 @@
 
 ## 安装
 
-桌面端在 **插件 → 添加插件** 里填写 `@hexiaowu/dsh-web-search-zai`。也可以用插件管理器：
+要求 DSH `>=0.2.2-rc.1 <0.3.0`（对应 `package.json` 的 `engines.dsh`）。包发布在 npm，按包名从 npm 拉取。
 
-```text
-plugin_manager install_bundle -> @hexiaowu/dsh-web-search-zai
+用 DSH 的启动器 `dsh` 把包装进指定 profile（`dsh` 没加进 PATH 时用完整路径调用）：
+
+```bash
+dsh plugin --profile desktop add @hexiaowu/dsh-web-search-zai
 ```
 
-安装完成后重启一次 Harness。插件会自动启用，网页抓取不受影响。
+装完重启一次 Harness，插件会自动启用，网页抓取不受影响。
 
 ## 配置
 
@@ -82,7 +84,11 @@ plugin_manager install_bundle -> @hexiaowu/dsh-web-search-zai
 
 ## 卸载
 
-在侧边栏 **插件 → 已安装插件** 里卸载 **Z.ai 网页搜索**，重启 Harness。搜索会回到 DeepSeek 官方通道。
+```bash
+dsh plugin --profile desktop remove @hexiaowu/dsh-web-search-zai
+```
+
+重启 Harness 后，搜索回到 DeepSeek 官方通道。
 
 ## 许可证
 
