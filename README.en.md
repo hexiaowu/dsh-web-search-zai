@@ -109,8 +109,7 @@ npm run probe   # real endpoints; needs ZAI_CODING_CN_API_KEY
 ```
 
 See [CONTRIBUTING.md](https://github.com/hexiaowu/dsh-web-search-zai/blob/main/CONTRIBUTING.md) for the
-repo layout and test details, and [RELEASING.md](https://github.com/hexiaowu/dsh-web-search-zai/blob/main/RELEASING.md)
-for the release process.
+repo layout and test details.
 
 ## License
 

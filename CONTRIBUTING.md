@@ -76,7 +76,7 @@ plugin_manager install_bundle -> $(pwd)
 - 宿主包放 `peerDependencies`，只给测试用的包放 `devDependencies`。
 - 不要打印凭据、请求体或 key。错误信息可以带上游返回，但不能带 key。
 - 保持 `files` / `exports` 和实际文件一致：`lib`、`client.js`、`cordis.patch.yml`、`locale/*.json`、
-  `icon.svg`、`README.md`、`README.en.md`、`LICENSE`、`CHANGELOG.md`、`CONTRIBUTING.md`、`RELEASING.md`。
+  `icon.svg`、`README.md`、`README.en.md`、`LICENSE`、`CHANGELOG.md`、`CONTRIBUTING.md`。
 - 提 PR 前跑一遍 `npm run check`、`npm pack --dry-run`，确认没有把 `docs/findings.md`、原始响应、
   凭据或 `EXECUTION-PLAN.md` 加进暂存区。
 

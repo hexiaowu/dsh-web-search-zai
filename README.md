@@ -3,7 +3,7 @@
 [![npm](https://img.shields.io/npm/v/@hexiaowu/dsh-web-search-zai?label=npm)](https://www.npmjs.com/package/@hexiaowu/dsh-web-search-zai)
 [![CI](https://github.com/hexiaowu/dsh-web-search-zai/actions/workflows/ci.yml/badge.svg)](https://github.com/hexiaowu/dsh-web-search-zai/actions/workflows/ci.yml)
 
-[GitHub](https://github.com/hexiaowu/dsh-web-search-zai) · [npm](https://www.npmjs.com/package/@hexiaowu/dsh-web-search-zai) · [English](https://github.com/hexiaowu/dsh-web-search-zai/blob/main/README.en.md) · [更新日志](https://github.com/hexiaowu/dsh-web-search-zai/blob/main/CHANGELOG.md) · [参与开发](https://github.com/hexiaowu/dsh-web-search-zai/blob/main/CONTRIBUTING.md) · [发布流程](https://github.com/hexiaowu/dsh-web-search-zai/blob/main/RELEASING.md)
+[GitHub](https://github.com/hexiaowu/dsh-web-search-zai) · [npm](https://www.npmjs.com/package/@hexiaowu/dsh-web-search-zai) · [English](https://github.com/hexiaowu/dsh-web-search-zai/blob/main/README.en.md) · [更新日志](https://github.com/hexiaowu/dsh-web-search-zai/blob/main/CHANGELOG.md) · [参与开发](https://github.com/hexiaowu/dsh-web-search-zai/blob/main/CONTRIBUTING.md)
 
 这是给 DeepSeek Harness（DSH）加的一个 Z.ai / 智谱 GLM 搜索插件，provider id 为 `zai`。装好并启用后，
 模型调用 `web_search` 会走你的 Z.ai 套餐额度或原生搜索 API，不再走 DeepSeek 官方搜索通道——后者每次
@@ -186,8 +186,7 @@ npm run check     # 语法检查 + 全部测试（发布前也会跑）
 npm run probe     # 真实接口冒烟测试；需要 ZAI_CODING_CN_API_KEY
 ```
 
-开发约定、目录结构、本地安装和测试细节见 [CONTRIBUTING.md](https://github.com/hexiaowu/dsh-web-search-zai/blob/main/CONTRIBUTING.md)；
-版本和发布流程见 [RELEASING.md](https://github.com/hexiaowu/dsh-web-search-zai/blob/main/RELEASING.md)。
+开发约定、目录结构、本地安装和测试细节见 [CONTRIBUTING.md](https://github.com/hexiaowu/dsh-web-search-zai/blob/main/CONTRIBUTING.md)。
 
 ## License
 

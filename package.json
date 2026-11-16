@@ -36,8 +36,7 @@
     "LICENSE",
     "CHANGELOG.md",
     "README.en.md",
-    "CONTRIBUTING.md",
-    "RELEASING.md"
+    "CONTRIBUTING.md"
   ],
   "engines": {
     "node": "^22.19.0 || >=24.0.0",
