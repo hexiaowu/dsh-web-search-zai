@@ -3,7 +3,7 @@
 [![npm](https://img.shields.io/npm/v/@hexiaowu/dsh-web-search-zai?label=npm)](https://www.npmjs.com/package/@hexiaowu/dsh-web-search-zai)
 [![CI](https://github.com/hexiaowu/dsh-web-search-zai/actions/workflows/ci.yml/badge.svg)](https://github.com/hexiaowu/dsh-web-search-zai/actions/workflows/ci.yml)
 
-[GitHub](https://github.com/hexiaowu/dsh-web-search-zai) · [npm](https://www.npmjs.com/package/@hexiaowu/dsh-web-search-zai) · [中文](https://github.com/hexiaowu/dsh-web-search-zai/blob/main/README.md) · [Changelog](https://github.com/hexiaowu/dsh-web-search-zai/blob/main/CHANGELOG.md) · [Contributing](https://github.com/hexiaowu/dsh-web-search-zai/blob/main/CONTRIBUTING.md)
+[GitHub](https://github.com/hexiaowu/dsh-web-search-zai) · [npm](https://www.npmjs.com/package/@hexiaowu/dsh-web-search-zai) · [中文](https://github.com/hexiaowu/dsh-web-search-zai/blob/main/README.md)
 
 A Z.ai / Zhipu GLM search provider (`zai`) for DSH `ctx.web`. Once enabled, `web_search` uses Z.ai
 instead of DeepSeek's official search channel.
@@ -86,10 +86,6 @@ Other fields (`planBaseURL`, `apiBaseURL`, `apiVersion`, `maxTokens`, `maxUses`,
 
 Remove **Z.ai 网页搜索** in Plugins → Installed, then restart Harness. `web` returns to
 `deepseek-official`.
-
-## Development
-
-See [CONTRIBUTING.md](https://github.com/hexiaowu/dsh-web-search-zai/blob/main/CONTRIBUTING.md).
 
 ## License
 

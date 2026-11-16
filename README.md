@@ -3,7 +3,7 @@
 [![npm](https://img.shields.io/npm/v/@hexiaowu/dsh-web-search-zai?label=npm)](https://www.npmjs.com/package/@hexiaowu/dsh-web-search-zai)
 [![CI](https://github.com/hexiaowu/dsh-web-search-zai/actions/workflows/ci.yml/badge.svg)](https://github.com/hexiaowu/dsh-web-search-zai/actions/workflows/ci.yml)
 
-[GitHub](https://github.com/hexiaowu/dsh-web-search-zai) · [npm](https://www.npmjs.com/package/@hexiaowu/dsh-web-search-zai) · [English](https://github.com/hexiaowu/dsh-web-search-zai/blob/main/README.en.md) · [更新日志](https://github.com/hexiaowu/dsh-web-search-zai/blob/main/CHANGELOG.md) · [参与开发](https://github.com/hexiaowu/dsh-web-search-zai/blob/main/CONTRIBUTING.md)
+[GitHub](https://github.com/hexiaowu/dsh-web-search-zai) · [npm](https://www.npmjs.com/package/@hexiaowu/dsh-web-search-zai) · [English](https://github.com/hexiaowu/dsh-web-search-zai/blob/main/README.en.md)
 
 给 DeepSeek Harness 的 `ctx.web` 加一个 Z.ai / 智谱 GLM 搜索 provider（id `zai`）。启用后
 `web_search` 走 Z.ai，不再走 DeepSeek 官方搜索通道。
@@ -85,10 +85,6 @@ plugin_manager install_bundle -> @hexiaowu/dsh-web-search-zai
 
 在侧边栏 **插件 → 已安装插件** 里卸载 **Z.ai 网页搜索**，重启 Harness。`web` 会回到
 `deepseek-official`。
-
-## 开发
-
-见 [CONTRIBUTING.md](https://github.com/hexiaowu/dsh-web-search-zai/blob/main/CONTRIBUTING.md)。
 
 ## License
 
