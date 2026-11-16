@@ -33,8 +33,8 @@ profile 会解析宿主自己的那一份，重复的 schemastery 会让 Config 
 - `test/search.test.mjs`：两条通道的请求形状、超时、取消、HTTP 错误，以及不触发兜底时的行为；
   用注入的 `fetchImpl`，不连网。
 - `test/index.test.mjs`：provider 注册、凭据优先级、兜底、本机 test/key 接口。
-- `test/client.test.mjs`：伪造的 `window.__ModuleLoader__` + React + ctx；检查插槽（slot）注册、key 输入框、
-  眼睛图标、兜底开关、测试按钮。
+- `test/client.test.mjs`：伪造的 `window.__ModuleLoader__` + React + ctx；检查插槽（slot）注册、key 输入、
+  兜底开关、测试按钮。
 - `test/probe.test.mjs`：在本地起一个服务，跑 `test/probe.mjs`，检查脱敏。
 - `test/probe.mjs` 是脚本，不是测试；测试运行器看到 `NODE_TEST_CONTEXT` 时会直接退出。
 
@@ -82,6 +82,6 @@ plugin_manager install_bundle -> $(pwd)
 
 ## 安全
 
-`/dsh-web-search-zai/key` 是故意把 key 返回给本机设置页的（你要求明文显示）。它只能监听本机，
+`/dsh-web-search-zai/key` 是故意把 key 返回给本机设置页的（方便核对当前 key）。它只能监听本机，
 必须带 `no-store`，不能写日志；不要把它开放给远程客户端，也不要加 CORS。测试接口会真实消耗额度，
 同样只留给本机，并保持有上限。

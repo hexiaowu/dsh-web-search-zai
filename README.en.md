@@ -62,8 +62,7 @@ if you want Z.ai only.
 Open **Settings → Z.ai 搜索**:
 
 - **API key**: writes `refs.ZAI_CODING_CN_API_KEY` through the DSH credential store; it is never written
-  into the profile config. The field shows the current key in plain text by default, with an eye icon
-  inside the input to mask/reveal it.
+  into the profile config.
 - **Fallback switch**: writes `fallbackEnabled`; applies to the next search.
 - **Test search**: one real search through the same `ctx.web` seam (up to 3 results), showing the first
   title/URL or the full error. It consumes one plan call (or DeepSeek quota when Z.ai fails).
