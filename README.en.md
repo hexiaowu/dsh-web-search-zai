@@ -5,8 +5,8 @@
 
 [GitHub](https://github.com/hexiaowu/dsh-web-search-zai) · [npm](https://www.npmjs.com/package/@hexiaowu/dsh-web-search-zai) · [中文](https://github.com/hexiaowu/dsh-web-search-zai/blob/main/README.md)
 
-A Z.ai / Zhipu GLM search provider (`zai`) for DSH `ctx.web`. Once enabled, `web_search` uses Z.ai
-instead of DeepSeek's official search channel.
+A Z.ai / Zhipu GLM search plugin for DeepSeek Harness. Once enabled, `web_search` uses Z.ai instead
+of DeepSeek's official search channel.
 
 ## Features
 
@@ -23,7 +23,7 @@ Add `@hexiaowu/dsh-web-search-zai` in **Plugins → Add plugin**, or:
 plugin_manager install_bundle -> @hexiaowu/dsh-web-search-zai
 ```
 
-Restart Harness once. The plugin sets `web.searchProvider` to `zai`; `web_fetch` is unaffected.
+Restart Harness once. The plugin enables itself automatically; web fetching is unaffected.
 
 ## Configure
 
@@ -84,8 +84,8 @@ Other fields (`planBaseURL`, `apiBaseURL`, `apiVersion`, `maxTokens`, `maxUses`,
 
 ## Uninstall
 
-Remove **Z.ai 网页搜索** in Plugins → Installed, then restart Harness. `web` returns to
-`deepseek-official`.
+Remove **Z.ai 网页搜索** in Plugins → Installed, then restart Harness. Search returns to the
+DeepSeek official channel.
 
 ## License
 
